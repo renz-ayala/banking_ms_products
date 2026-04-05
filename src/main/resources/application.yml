@@ -5,6 +5,9 @@ spring:
     url: r2dbc:postgresql://${DB_HOST}:${DB_PORT}/${DB}
     username: ${DB_USER}
     password: ${DB_PASSWORD}
+    pool:
+      max-size: 5
+      initial-size: 2
 
 server:
   port: 11102
