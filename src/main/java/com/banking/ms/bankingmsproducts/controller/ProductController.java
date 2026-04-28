@@ -1,6 +1,6 @@
 package com.banking.ms.bankingmsproducts.controller;
 
-import com.banking.ms.bankingmsproducts.model.Product;
+import com.banking.ms.bankingmsproducts.repository.entity.Product;
 import com.banking.ms.bankingmsproducts.service.ProductService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
