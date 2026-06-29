@@ -11,3 +11,8 @@ spring:
 
 server:
   port: 11102
+
+secret_keys:
+  codes:
+    jwt: ${JWT_SECRET}
+    crypt_key: ${CRYPT_KEY}

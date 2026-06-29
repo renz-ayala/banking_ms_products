@@ -1,5 +1,6 @@
 package com.banking.ms.bankingmsproducts.controller;
 
+import com.banking.ms.bankingmsproducts.controller.response.ProductResponse;
 import com.banking.ms.bankingmsproducts.repository.entity.Product;
 import com.banking.ms.bankingmsproducts.service.ProductService;
 import lombok.RequiredArgsConstructor;
@@ -17,7 +18,7 @@ public class ProductController {
     private final ProductService productService;
 
     @GetMapping("/get-products/{uniqueClientId}")
-    public Flux<Product> findByUniqueClientId(@PathVariable  String uniqueClientId) {
+    public Flux<ProductResponse> findByUniqueClientId(@PathVariable  String uniqueClientId) {
         return productService.findByUniqueClientId(uniqueClientId);
     }
 }
